@@ -101,17 +101,15 @@ new Vue({
         this.cart.items.splice(index, 1);
       }
     },
-    checkout : function() {
-        // Javascript confirm method
-        if (confirm('Are you sure you want to purchase these products?')) {
-            this.cart.items.forEach(function(item) {
-                // console.log(item.product.inStock);
-                item.product.inStock += item.quantity;
-            });
-        }
-
+    checkout: function() {
+      // Javascript confirm method
+      if (confirm("Are you sure you want to purchase these products?")) {
+        this.cart.items.forEach(function(item) {
+          item.product.inStock += item.quantity;
+        });
         this.cart.items = [];
-    }    
+      }
+    }
   },
   computed: {
     cartTotal: function() {
