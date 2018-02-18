@@ -2,6 +2,8 @@
 
 > An e-commerce app built with Vue.js.
 
+- [DEMO](http://prajesh.ecommerce.s3-website-ap-southeast-1.amazonaws.com/)
+
 Running the app:
 
 ``` bash
